@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sistema de recados</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-sm-12 d-flex justify-content-center align-items-center mt-4"
+          >
+            <h2>>>recados<<</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-sm-12 col-lg-6 col-md-4 divEsquerda h-auto w-50 mt-md-3"
+          ></div>
+          <div class="col-sm-12 col-lg-6 col-md-8 divDireita">
+            <fieldset
+              class="shadow p-3 mb-5 bg-transparent rounded w-75 h-75 p-4"
+            >
+              <div class="alert alert-danger" role="alert" hidden id="msgError">
+                <strong>Ops!</strong> Usuário não cadastrado, clique em fazer
+                cadastro.
+              </div>
+              <div
+                class="alert alert-danger"
+                role="alert"
+                hidden
+                id="msgErrorSenha"
+              >
+                <strong>Ops!</strong> E-mail e senha não correspondem.
+              </div>
+              <form id="form">
+                <input
+                  id="user"
+                  type="email"
+                  class="form-control border-0 mb-2 inputs mt-5"
+                  placeholder="Email"
+                  required
+                />
+
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control border-0 mb-3 inputs mt-3"
+                  placeholder="Password"
+                  required
+                />
+
+                <button
+                  class="btn btn-primary rounded-pill fw-bold w-100 mb-2 text-nowrap border-0 mt-5"
+                  id="entrar"
+                  type="submit"
+                >
+                  ENTRAR
+                </button>
+              </form>
+              <button
+                type="button"
+                onclick="document.location.href = 'criarConta.html'"
+                class="btn btn-primary border-0 rounded-pill w-100 fw-bold text-wrap"
+                id="criarConta"
+              >
+                Criar Conta
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../public/js/index.js"></script>
+  </body>
+</html>

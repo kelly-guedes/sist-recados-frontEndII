@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  background-image: url("../images/pexels-henry-&-co-1939485.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+h2 {
+  position: relative;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #f0d1f1;
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: ">>recados<<";
+  position: absolute;
+  color: #c24d915e;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #c24d915e;
+  animation: slide 6s linear infinite;
+  -webkit-animation: slide 5s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+h3 {
+  position: relative;
+  font-size: 7rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #f0d1f1;
+  text-transform: uppercase;
+}
+
+h3::before {
+  content: ">>cadastro<<";
+  position: absolute;
+  color: #c24d915e;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #c24d915e;
+  animation: slide2 6s linear infinite;
+  -webkit-animation: slide2 5s linear infinite;
+  overflow: hidden;
+}
+
+h4 {
+  position: relative;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #f0d1f1;
+  text-transform: uppercase;
+}
+
+h4::before {
+  content: ">>recados<<";
+  position: absolute;
+  color: #c24d915e;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #c24d915e;
+  animation: slide3 10s linear;
+  -webkit-animation: slide3 10s linear;
+  overflow: hidden;
+}
+
+@keyframes slide3 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.divDireita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center, left;
+  margin-top: 50px;
+  flex: 0.5;
+  height: 60%;
+}
+
+.divEsquerda {
+  background-image: url("../images/to_do_list7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 65%;
+  flex: 0.5;
+  margin: 15px;
+  margin-top: 75px;
+  border-radius: 30px;
+}
+
+#entrar:focus,
+#criarConta:focus,
+#salvarUsuario:focus {
+  outline: none;
+}
+
+label {
+  display: flex;
+  flex: column;
+  font-size: 12px;
+  text-align: left;
+  align-items: left;
+  margin-left: 0;
+  align-items: left;
+  margin-left: 12px;
+  margin-top: 12px;
+  color: #705a5a;
+}
+#entrar,
+#criarConta,
+#salvarUsuario,
+#paginicial,
+#inputCadastrar,
+#sairSistema {
+  color: white;
+  border: none;
+  background: rgb(255, 184, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 184, 253, 1) 0%,
+    rgb(158, 29, 149) 100%
+  );
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.form-control:hover {
+  box-shadow: 0 0 0 0.25rem rgba(255, 184, 253, 1);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 184, 253, 1);
+}
+
+.divMeusRecados {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+table {
+  padding: 30px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #e0aeae;
+  border-collapse: collapse;
+}
+
+tbody th {
+  opacity: 0.8;
+}
+
+#th1 {
+  width: 8%;
+}
+
+#th2 {
+  width: 20%;
+}
+#th4 {
+  width: 15%;
+}
+
+#inputCadastrar {
+  background-color: #705a5a;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#msgError {
+  text-align: start center;
+  flex-direction: column;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+#msgSuccess {
+  text-align: start center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

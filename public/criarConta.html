@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
+    <title>Criar Conta</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-sm-12 d-flex justify-content-center align-items-center "
+            >
+              <h3>>>cadastro<<</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6 w-100 mt-0 d-flex justify-content-center align-items-center">
+            
+                    <fieldset
+                      class="shadow p-2 mb-3 bg-transparent rounded w-50 justify-content-center align-items-center p-lg-4"
+                    >
+                      <div class="alert alert-danger" role="alert" hidden id="msgError1">
+                        
+                      </div>
+                      <div class="alert alert-success"role="alert" id="msgSuccess">
+                         </div>
+                      <form id="formCadastro">
+                        <label class="mt-2" for="emailUser" id="labelEmailUser" >Email</label>
+                        <input
+                          id="emailUser"
+                          type="email"
+                          name="emailUser"
+                          class="form-control border-0 mb-1 inputs mt-1"
+                          placeholder="joao@gmail.com"                        
+                        />
+
+                        <label for="passwordUser" id="labelPasswordUser" class=" mb-0 p-0" >Senha</label>
+                        <input
+                          type="password"
+                          id="passwordUser"
+                          name="passwordUser"
+                          class="form-control border-0 mb-1 inputs mt-1"
+                        />
+                        
+                        <label for="confirmPassword" id="labelConfirmPassword">Confirmar Senha</label>
+                        <input type="password" id="confirmPassword"name="confirmPassword"
+                          class=" form-control border-0 mb-2 mt-1  inputs" />
+
+                        <button
+                          class="btn btn-primary rounded-pill fw-bold  ms-5 me-5 mb-2 text-wrap border-0 mt-3"
+                          id="salvarUsuario"
+                          type="submit"
+                        >
+                          CRIAR CONTA
+                        </button>
+                        <button
+                        type="button"
+                        onclick="document.location.href = 'index.html'"
+                        class="btn btn-primary rounded-pill fw-bold align-self-center text-wrap border-0 mt-3 mb-2 ms-5"
+                        id="paginicial"
+                      >
+                        PÁGINA INICIAL
+                      </button>
+
+                      </form>
+
+                    </fieldset>              
+              
+            </div>
+          </div>
+        
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../public/js/criarConta.js"></script>
+  </body>
+</html>
